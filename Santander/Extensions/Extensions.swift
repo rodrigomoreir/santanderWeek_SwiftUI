@@ -39,7 +39,9 @@ extension Color {
         return Color(red: 0.20, green: 0.20, blue: 0.20)
     }
     
-
+    static var santanderGray: Color {
+        return Color(red: 0.85, green: 0.85, blue: 0.85)
+    }
 }
 
 extension View {
