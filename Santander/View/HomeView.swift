@@ -23,6 +23,11 @@ struct HomeView: View {
             case .loaded:
                 ScrollView(showsIndicators: true, content: {
                     AccountView(viewModel: viewModel.accountViewModel)
+                    BalanceView(viewModel: viewModel.balanceViewModel)
+                        .padding(.top, -42.0)
+                    FeatureView(viewModel: viewModel.featureViewModel)
+                        .frame(height: 100)
+                        .padding(.top, 20)
                 })
                 .background(.white)
                 .toolbar {
