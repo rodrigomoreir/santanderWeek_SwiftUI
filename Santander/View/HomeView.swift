@@ -28,6 +28,11 @@ struct HomeView: View {
                     FeatureView(viewModel: viewModel.featureViewModel)
                         .frame(height: 100)
                         .padding(.top, 20)
+                    CardView(viewModel: viewModel.cardViewModel)
+                        .padding(.top, 20)
+                    NewsView(viewModel: viewModel.newsViewModel)
+                        .frame(height: 240)
+                        .padding(.top, -40)
                 })
                 .background(.white)
                 .toolbar {
