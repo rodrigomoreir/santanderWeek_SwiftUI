@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1241024B2A7442CC005DAD65 /* PixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1241024A2A7442CC005DAD65 /* PixView.swift */; };
 		12B174E42A72C18200E1B9CD /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B174E32A72C18200E1B9CD /* BalanceView.swift */; };
 		12B174E62A72CFC900E1B9CD /* FeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B174E52A72CFC900E1B9CD /* FeatureView.swift */; };
 		12B174E82A72DC9800E1B9CD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B174E72A72DC9800E1B9CD /* CardView.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1241024A2A7442CC005DAD65 /* PixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixView.swift; sourceTree = "<group>"; };
 		12B174E32A72C18200E1B9CD /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
 		12B174E52A72CFC900E1B9CD /* FeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureView.swift; sourceTree = "<group>"; };
 		12B174E72A72DC9800E1B9CD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -87,6 +89,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1241024C2A7445B0005DAD65 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		6D8B30B72A64522400A57A55 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +126,7 @@
 				12B174E52A72CFC900E1B9CD /* FeatureView.swift */,
 				12B174E72A72DC9800E1B9CD /* CardView.swift */,
 				12B174E92A72E53600E1B9CD /* NewsView.swift */,
+				1241024A2A7442CC005DAD65 /* PixView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -150,6 +160,7 @@
 		6DFA6D7A2A62191E008E70DE /* Santander */ = {
 			isa = PBXGroup;
 			children = (
+				1241024C2A7445B0005DAD65 /* Navigation */,
 				6DFA6D8C2A622278008E70DE /* Model */,
 				6DC0685E2A6AEF7F0025D172 /* View */,
 				6D8B30B72A64522400A57A55 /* ViewModel */,
@@ -290,6 +301,7 @@
 				6DC068642A6B14130025D172 /* NavigationBarAppearance.swift in Sources */,
 				6DC068732A6B515E0025D172 /* PageControlAppearance.swift in Sources */,
 				6DC068622A6AF04A0025D172 /* HomeView.swift in Sources */,
+				1241024B2A7442CC005DAD65 /* PixView.swift in Sources */,
 				6D8B30BA2A64534800A57A55 /* Extensions.swift in Sources */,
 				6D593F622A6F147A00888F01 /* CardViewModel.swift in Sources */,
 				6DC0687A2A6BE75C0025D172 /* News.swift in Sources */,

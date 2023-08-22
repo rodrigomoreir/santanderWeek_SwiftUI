@@ -1,14 +1,13 @@
 //
-//  HomeView.swift
+//  PixView.swift
 //  Santander
 //
-//  Created by Robson Moreira on 21/07/23.
+//  Created by Rodrigo Alves Moreira on 28/07/23.
 //
 
 import SwiftUI
 
-struct HomeView: View {
-    
+struct PixView: View {
     @StateObject private var viewModel = HomeViewModel()
     
     var body: some View {
@@ -22,32 +21,15 @@ struct HomeView: View {
                     .progressViewStyle(CircularProgressViewStyle(tint: Color.santanderRed))
             case .loaded:
                 ScrollView(showsIndicators: true, content: {
-                    AccountView(viewModel: viewModel.accountViewModel)
-                    BalanceView(viewModel: viewModel.balanceViewModel)
-                        .padding(.top, -42.0)
-                    FeatureView(viewModel: viewModel.featureViewModel)
-                        .frame(height: 100)
-                        .padding(.top, 20)                        
-                    CardView(viewModel: viewModel.cardViewModel)
-                        .padding(.top, 20)
-                    NewsView(viewModel: viewModel.newsViewModel)
-                        .frame(height: 240)
-                        .padding(.top, -40)
+                    
                 })
                 .background(.white)
                 .toolbar {
-                    ToolbarItem(placement: .navigationBarLeading) {
-                        Button { } label: {
-                            Image("alert_bell")
-                        }
-                    }
                     ToolbarItem(placement: .principal) {
-                        Image("santander_logo")
-                    }
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Button { } label: {
-                            Image("menu_hamburguer")
-                        }
+                        Text("Pix")
+                            .font(.openSansSemiBold(size: 22))
+                            .kerning(0.58)
+                            .foregroundColor(.white)
                     }
                 }
                 .preferredColorScheme(.dark)
@@ -81,8 +63,8 @@ struct HomeView: View {
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
+struct PixView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        PixView()
     }
 }
